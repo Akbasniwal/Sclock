@@ -1,0 +1,126 @@
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.774);
+}
+.clock{
+    height: 500px;
+    width: 500px;
+    margin: 25px;
+    border: 15px solid rgb(195, 12, 12);
+    border-spacing: 5px;
+    background-color: rgb(0, 138, 138);
+    border-radius: 50%;
+    position: relative;
+    box-shadow:1px 1px 25px 1px rgb(20, 20, 20) inset;
+    border-style: dashed;
+}
+.clock div{
+    position: absolute;
+    font-size: 25px;
+}
+.twelve{
+    top: 3%;
+    left: 48%;
+}
+.one{
+    top: 10%;
+    right: 25%;
+}
+.two{
+    top: 25%;
+    right: 10%;
+}
+.three{
+    right: 3%;
+    top: 48%;
+}
+.four{
+    bottom: 25%;
+    right: 10%;
+}
+.five{
+    bottom: 10%;
+    right: 25%;
+}
+.six{
+    bottom: 3%;
+    left: 49%;
+}
+.seven{
+    bottom: 10%;
+    left: 25%;
+}
+.eight{
+    bottom: 25%;
+    left: 10%;
+}
+.nine{
+    top: 50%;
+    left: 3%;
+}
+.ten{
+    top: 25%;
+    left: 10%;
+}
+.eleven{
+    top: 10%;
+    left: 25%;
+}
+.dot{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    z-index: 50;
+    transform: translate(-50%,-50%);
+    background-color: rgb(12, 11, 11);
+    top: 50%;
+    left: 50%;
+    box-shadow:1px 1px 18px 1px rgb(123, 190, 187) inset;
+}
+
+.second{
+    height: 45%;
+    width: 3px;
+    bottom: 49.75%;
+    left: 49.75%;
+    background-color: rgb(8, 8, 8);
+    transform-origin: bottom;
+    animation: rotate 60s linear infinite;
+    animation: rotate 60s infinite steps(60);
+    box-shadow:1px 1px 1px 1px rgb(34, 70, 68) inset;
+}
+.minute{
+    height: 35%;
+    width: 8px;
+    bottom: 49.75%;
+    left: 49.75%;
+    border-radius: 15% 15% 0 0;
+    background-color: rgb(28, 43, 44);
+    transform-origin: bottom;
+    animation: rotate 3600s linear infinite;
+    animation: rotate 3600s infinite steps(180);
+}
+.hour{
+    height: 25%;
+    width: 10px;
+    bottom: 49.75%;
+    left: 49.75%;
+    border-radius: 15% 15% 0 0;
+    background-color: rgb(28, 43, 44);
+    transform-origin: bottom;
+    animation: rotate 216000s linear infinite;
+    animation: rotate 216000s infinite steps(360);
+}
+
+@keyframes rotate{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
