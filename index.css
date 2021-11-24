@@ -126,6 +126,7 @@ body{
 }
 @media screen and (max-width: 500px) {
     .clock{
+        background-color: rgb(64, 245, 245);
         width: 300px;
         height: 300px;
     }
