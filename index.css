@@ -123,4 +123,13 @@ body{
     100%{
         transform: rotate(360deg);
     }
+@media screen and (max-width: 500px) {
+    .clock{
+        width: 300px;
+        height: 300px;
+    }
+    .clock .div{
+        transform: scaleX(0.6);
+        transform: scaleY(0.6);
+    }
 }
