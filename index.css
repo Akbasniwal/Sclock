@@ -123,6 +123,7 @@ body{
     100%{
         transform: rotate(360deg);
     }
+}
 @media screen and (max-width: 500px) {
     .clock{
         width: 300px;
